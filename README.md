@@ -8,6 +8,10 @@ glitch-os is Art Seabra's toolkit of small, sharp utilities for creative work.
 
 This public repository only carries published, public-ready apps and their signed / notarized release artifacts. Development source, internal instructions, and unreleased work live outside this public surface.
 
+## System Position
+
+Pulse is a shipped Studio utility, not a primary ÆrrSystem front-door surface. Public identity should point to Pulse directly when the utility matters, and avoid using glitch-os as the headline.
+
 ## Published Apps
 
 | App | What it does | Status | Download |
