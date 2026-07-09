@@ -6,6 +6,8 @@ version: 1.0.0
 
 # pulse
 
+Reviewed: 2026-07-08
+
 A macOS menu-bar utility that keeps specific external drives awake via real I/O activity. Built for editors, colorists, audio engineers, photographers, and anyone whose external drive spins down mid-session.
 
 Product page: [`sn.ifth.is/defrag/pulse`](https://sn.ifth.is/defrag/pulse)
