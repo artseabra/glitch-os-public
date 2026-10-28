@@ -1,6 +1,6 @@
 # glitch-os (public)
 
-Reviewed: 2026-07-08
+Reviewed: 2026-10-28
 Status: public release surface
 Brand surface: [sn.ifth.is/defrag](https://sn.ifth.is/defrag)
 
@@ -16,9 +16,10 @@ Pulse is a shipped Studio utility, not a primary ÆrrSystem front-door surface. 
 
 | App | What it does | Status | Download |
 | --- | --- | --- | --- |
-| [`pulse`](./defrag/pulse) | macOS menu-bar utility that keeps specific external drives awake through real I/O activity. | v1.0.0 | [Pulse.dmg](https://github.com/artseabra/glitch-os-public/releases/download/v1.0.0/Pulse.dmg) |
+| [`pulse`](./defrag/pulse) | macOS menu-bar utility that mounts and keeps specific external drives awake through real I/O activity. | v1.2.0 (build 5) | [Pulse.dmg](https://github.com/artseabra/glitch-os-public/releases/download/v1.2.0/Pulse.dmg) |
 
 Each published app has its own subdirectory with a product-facing README.
+Pulse 1.2 requires macOS 14 or later and an Apple Silicon Mac.
 
 ## Public-Readiness Gate
 
