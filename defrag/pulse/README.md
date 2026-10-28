@@ -2,15 +2,15 @@
 title: Pulse
 status: shipped
 public_ready: true
-version: 1.2.1
-build: 6
+version: 1.2.2
+build: 8
 ---
 
 # pulse
 
 Reviewed: 2026-10-28
 
-A macOS menu-bar utility that keeps specific external drives awake via real I/O activity. Built for editors, colorists, audio engineers, photographers, and anyone whose external drive spins down mid-session.
+A macOS menu-bar utility that sends periodic I/O to selected external drives to help prevent standby. Built for editors, colorists, audio engineers, photographers, and anyone whose external drive spins down mid-session.
 
 Product page: [`sn.ifth.is/defrag/pulse`](https://sn.ifth.is/defrag/pulse)
 
@@ -19,7 +19,11 @@ Keeping the Mac awake and keeping an external drive active are separate tasks. P
 
 ## How
 
-Pulse lists connected external drives, including detected volumes that are not mounted. Turn a drive **On** to mount it normally and keep it awake with a tiny hidden heartbeat file (`.pulse-heartbeat`), every 30 seconds by default. Turn it **Off** to stop Pulse's heartbeats while leaving the drive mounted. Eject is a separate command in Arrange Drives.
+Pulse lists connected external drives, including detected volumes that are not mounted. Turn a drive **On** to mount it normally and request periodic writes to a tiny hidden heartbeat file (`.pulse-heartbeat`). New installs default to **20 seconds**; valid saved intervals are preserved. Choose 15, 20, 30, 60, or 120 seconds in Preferences. Longer intervals may allow standby; the best interval depends on the drive and enclosure.
+
+The switch shows your requested setting. Pulse displays scheduled, pending, slow, or failed requests separately from the time of the last successful write. Slow requests remain pending until they finish, without starting overlapping heartbeats for that drive. Turn a drive **Off** to stop future heartbeats while leaving it mounted; a request already underway may still finish. Eject is a separate command in Arrange Drives.
+
+A successful write confirms completed I/O, not that the drive has kept spinning between writes. Pulse shows standby prevention as unverified and does not promise a universal interval or zero drive wear.
 
 **Keep Mac awake** is a separate option in Preferences, off by default. When enabled, it prevents automatic idle system sleep while Pulse is running, even without a drive heartbeat. The display can still sleep. It does not prevent manual Sleep, lid-close sleep, or other system-enforced sleep.
 
@@ -29,10 +33,10 @@ Jolt provides explicit recovery for supported drives; it cannot repair every USB
 
 Requires **macOS 14 or later** and an **Apple Silicon Mac**.
 
-1. Download [`Pulse 1.2.1 (build 6)`](https://github.com/artseabra/glitch-os-public/releases/download/v1.2.1/Pulse.dmg).
+1. Download [`Pulse 1.2.2 (build 8)`](https://github.com/artseabra/glitch-os-public/releases/download/v1.2.2/Pulse.dmg).
 2. Open the DMG and drag `Pulse.app` to `/Applications`.
 3. Launch Pulse — look for the icon in your menu bar (no Dock icon).
-4. Turn on the external drives you want mounted and kept awake.
+4. Turn on the external drives you want mounted and receiving heartbeat activity.
 
 ## Distribution
 - Signed with Developer ID Application + hardened runtime
@@ -46,4 +50,4 @@ spctl --assess --type open --context context:primary-signature -v Pulse.dmg
 ```
 
 ## Releases
-See the [1.2.1 release notes](https://github.com/artseabra/glitch-os-public/releases/tag/v1.2.1) or the [Releases tab](https://github.com/artseabra/glitch-os-public/releases) for downloadable DMGs.
+See the [1.2.2 release notes](https://github.com/artseabra/glitch-os-public/releases/tag/v1.2.2) or the [Releases tab](https://github.com/artseabra/glitch-os-public/releases) for downloadable DMGs.
