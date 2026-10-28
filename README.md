@@ -16,10 +16,10 @@ Pulse is a shipped Studio utility, not a primary ÆrrSystem front-door surface. 
 
 | App | What it does | Status | Download |
 | --- | --- | --- | --- |
-| [`pulse`](./defrag/pulse) | macOS menu-bar utility that mounts and keeps specific external drives awake through real I/O activity. | v1.2.0 (build 5) | [Pulse.dmg](https://github.com/artseabra/glitch-os-public/releases/download/v1.2.0/Pulse.dmg) |
+| [`pulse`](./defrag/pulse) | macOS menu-bar utility for selected external-drive activity, with optional Mac idle-sleep prevention. | v1.2.1 (build 6) | [Pulse.dmg](https://github.com/artseabra/glitch-os-public/releases/download/v1.2.1/Pulse.dmg) |
 
 Each published app has its own subdirectory with a product-facing README.
-Pulse 1.2 requires macOS 14 or later and an Apple Silicon Mac.
+Pulse 1.2.1 requires macOS 14 or later and an Apple Silicon Mac. Its separate **Keep Mac awake** option is off by default.
 
 ## Public-Readiness Gate
 
