@@ -1,6 +1,6 @@
 # glitch-os (public)
 
-Reviewed: 2026-10-28
+Reviewed: 2026-10-29
 Status: public release surface
 Brand surface: [sn.ifth.is/defrag](https://sn.ifth.is/defrag)
 
@@ -16,10 +16,12 @@ Pulse is a shipped Studio utility, not a primary ÆrrSystem front-door surface. 
 
 | App | What it does | Status | Download |
 | --- | --- | --- | --- |
-| [`pulse`](./defrag/pulse) | macOS menu-bar utility for selected external-drive activity, with optional Mac idle-sleep prevention. | v1.2.2 (build 8) | [Pulse.dmg](https://github.com/artseabra/glitch-os-public/releases/download/v1.2.2/Pulse.dmg) |
+| [`pulse`](./defrag/pulse) | macOS menu-bar utility for selected external-drive activity, with optional Mac idle-sleep prevention. | v1.3.0 (build 20) | [Pulse.dmg](https://github.com/artseabra/glitch-os-public/releases/download/v1.3.0/Pulse.dmg) |
 
 Each published app has its own subdirectory with a product-facing README.
-Pulse 1.2.2 requires macOS 14 or later and an Apple Silicon Mac. New installs use a 20-second heartbeat interval; valid saved intervals are preserved. Drive standby behavior depends on the drive and enclosure. Its separate **Keep Mac awake** option is off by default.
+Pulse 1.3.0 requires macOS 14 or later and an Apple Silicon Mac. New drives, including SSDs, start Off. Each drive has its own Automatic or Custom policy; Automatic uses eligible Calibration (Beta) evidence or an explicitly uncalibrated 20-second starting interval. Existing saved On choices and valid intervals are preserved. Drive standby behavior depends on the drive and enclosure. Its separate **Keep Mac awake** option is off by default.
+
+The Direct edition includes **Settings → General → Check for Updates…** and optional daily checks, initially Off. Updating from 1.2.2 or earlier requires one manual download of 1.3.0 to receive this updater.
 
 ## Public-Readiness Gate
 
