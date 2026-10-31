@@ -1,6 +1,6 @@
 # glitch-os (public)
 
-Reviewed: 2026-10-29
+Reviewed: 2026-10-31
 Status: public release surface
 Brand surface: [sn.ifth.is/defrag](https://sn.ifth.is/defrag)
 
@@ -16,12 +16,12 @@ Pulse is a shipped Studio utility, not a primary ÆrrSystem front-door surface. 
 
 | App | What it does | Status | Download |
 | --- | --- | --- | --- |
-| [`pulse`](./defrag/pulse) | macOS menu-bar utility for selected external-drive activity, with optional Mac idle-sleep prevention. | v1.3.0 (build 20) | [Pulse.dmg](https://github.com/artseabra/glitch-os-public/releases/download/v1.3.0/Pulse.dmg) |
+| [`pulse`](./defrag/pulse) | macOS menu-bar utility for selected external-drive activity, with optional Mac idle-sleep prevention. | v1.3.1 (build 23) | [Pulse.dmg](https://github.com/artseabra/glitch-os-public/releases/download/v1.3.1/Pulse.dmg) |
 
 Each published app has its own subdirectory with a product-facing README.
-Pulse 1.3.0 requires macOS 14 or later and an Apple Silicon Mac. New drives, including SSDs, start Off. Each drive has its own Automatic or Custom policy; Automatic uses eligible Calibration (Beta) evidence or an explicitly uncalibrated 20-second starting interval. Existing saved On choices and valid intervals are preserved. Drive standby behavior depends on the drive and enclosure. Its separate **Keep Mac awake** option is off by default.
+Pulse 1.3.1 requires macOS 14 or later and an Apple Silicon Mac. Calibration has been removed. Each drive has a manual interval, initially 20 seconds; this is a starting choice, not a tested recommendation. New drives, including SSDs, start Off. Existing saved On choices and valid custom intervals are preserved; former Automatic policies become 20 seconds. Drive standby behavior depends on the drive and enclosure. Its separate **Keep Mac awake** option is off by default.
 
-The Direct edition includes **Settings → General → Check for Updates…** and optional daily checks, initially Off. Updating from 1.2.2 or earlier requires one manual download of 1.3.0 to receive this updater.
+The Direct edition includes **Settings → General → Check for Updates…** and optional daily checks, initially Off. Updating from 1.2.2 or earlier requires one manual download of 1.3.1 to receive this updater.
 
 ## Public-Readiness Gate
 
