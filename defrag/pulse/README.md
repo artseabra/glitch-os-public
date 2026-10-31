@@ -52,7 +52,7 @@ Requires **macOS 14 or later** and an **Apple Silicon Mac**.
 
 ## Updates
 
-The Direct edition includes **Settings → General → Check for Updates…**. Optional daily checks are **Off initially**. Sparkle verifies the signed update feed and downloads. Automatic downloading and silent installation are disabled. Pulse asks before quitting to install, and pending drive requests must settle first. If a staged update defers quitting, cancel the update or wait for its pending work, then quit again. Confirm that Pulse has exited before assuming it has stopped. Checking for an update does not stop heartbeat activity or require a license.
+The Direct edition includes **Settings → General → Check for Updates…**. Optional daily checks are **Off initially**. Sparkle verifies the signed update feed and downloads. Automatic downloading and silent installation are disabled. Pulse asks before quitting to install, and pending drive requests must settle first. If a staged update defers quitting, wait for pending work to settle, retry Quit and respond to the update prompt. Choosing Later defers installation; it does not cancel the staged update. Confirm that Pulse has exited before assuming it has stopped. Checking for an update does not stop heartbeat activity or require a license.
 
 **If you use 1.2.2 or earlier, download 1.3.1 once**, quit Pulse, and replace `/Applications/Pulse.app` using the DMG. Older versions do not contain this updater. Existing preferences and licenses continue to apply. Future releases can be checked inside Pulse.
 
